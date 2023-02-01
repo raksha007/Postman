@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "ada84f4f-b3dd-48a6-aede-f4f11e4a0a7b",
+		"name": "Terminal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22495635"
+	},
+	"item": [
+		{
+			"name": "users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://23.88.52.139:5010/users",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5010",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "department_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://23.88.52.139:5010/user_item",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5010",
+					"path": [
+						"user_item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees_count",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "dep_count",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://23.88.52.139:5010/employees_cout",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5010",
+					"path": [
+						"employees_cout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5015/departments",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "departmnent_id",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://23.88.52.139:5015/departments?department_id=1",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5015",
+					"path": [
+						"departments"
+					],
+					"query": [
+						{
+							"key": "department_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5015/count_of_employees",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "departmnent_id",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://23.88.52.139:5015/count_of_employees",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5015",
+					"path": [
+						"count_of_employees"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
