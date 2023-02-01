@@ -1,0 +1,278 @@
+{
+	"info": {
+		"_postman_id": "3ccb4ae1-dfe2-4b93-97ec-6591dfbee1e3",
+		"name": "Web_Services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22495635"
+	},
+	"item": [
+		{
+			"name": "WS_1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user_id\":1}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5011/user",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5011",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WS_2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"type\": \"padawan\", \r\n\"spec\": \"QA\", \r\n\"ex\": \"1\", \r\n\"current_user\": {\"uid\": 7, \"uip:\": \"7.7.7.7\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://23.88.52.139:5012/users_team",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5012",
+					"path": [
+						"users_team"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "task_2_1/jobs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "162.55.220.72:5021/jobs",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5021",
+					"path": [
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "task_2_2/jobs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"job_id\": 6}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "162.55.220.72:5021/jobs",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5021",
+					"path": [
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "task_2_3/jobs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"job_id\": 6, \"j_data\":\r\n{\r\n    \"1\": {\r\n        \"Employee Status\": \"Full-time\",\r\n        \"Job Posting\": \"Aug 02 2022\",\r\n        \"description\": \"Experience with Functional Testing, including Regression Testing, Integration Testing, and API Testing. Experience with creating and executing test scripts. Experience testing developments against wireframes and style guide. Experience with systems, integration, and user acceptance testing. Experience in working with offshore /onsite Model\",\r\n        \"firm_title\": \"Cognizant Technology Solutions\",\r\n        \"position_title\": \"QA Functional Tester\",\r\n        \"skills\": [\r\n            \"postman\",\r\n            \"js\",\r\n            \"client_server\",\r\n            \"api_testing\"\r\n        ]\r\n    }},",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "23.88.52.139:5022/get_job",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5022",
+					"path": [
+						"get_job"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "task_3_1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5031/jobs_count",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5031",
+					"path": [
+						"jobs_count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "task_3_2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5031/all_jobs",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5031",
+					"path": [
+						"all_jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "task_3_3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firm_title\": \"UkrOboronProm\",\r\n\"position_title\": \"QA Engineer\",\r\n\"skills\": [\"Python\",\"JS\",\"SQL\"],\r\n\"description\": \"Developing App\",\r\n\"Job Posting\": \"Dec 07 2022\",\r\n\"Employee Status\": \"Part-time\"}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "23.88.52.139:5032/add_job_item",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5032",
+					"path": [
+						"add_job_item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HW_1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5055/get_method?name=Stepan&age=24",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5055",
+					"path": [
+						"get_method"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Stepan"
+						},
+						{
+							"key": "age",
+							"value": "24"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
